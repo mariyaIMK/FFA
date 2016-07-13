@@ -101,7 +101,7 @@ for trial in trials
         print ""
         print "An incrementation of the flux density will follow ..." 
         #sm = sm + 0.5 #check increments or call sm function 
-
+print "done"
 
 
 
