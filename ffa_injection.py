@@ -94,10 +94,10 @@ for trial in trials
     cands_period = (split_line[1])
 
     if float(format(cands_period,'.2f')) == float(format(period,'.2f')): 
-        print "The pulsar was found as the first candidate at flux density: %f" + % (sm) 
+        print "The pulsar was found as the first candidate at flux density: %f"  % (sm) 
     else
         print "The pulsar was NOT found as the first candidate"
-        print "The current flux density is: %f" + % (sm)
+        print "The current flux density is: %f"  % (sm)
         print ""
         print "An incrementation of the flux density will follow ..." 
         #sm = sm + 0.5 #check increments or call sm function 
