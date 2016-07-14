@@ -30,6 +30,7 @@ beam = sys.argv[1] #give the beam.fil file as an argument
 
 basename = beam.split('.fil',1)[0]
 filename = basename + '_dm' + str(dm) +'_p%f'  % (period) + '_sm%.3f' % (sm)
+detection = True
 
 #sm will get altered at each injection in step 3   
 #rms is defined in step 1 from prepdata
@@ -57,6 +58,8 @@ print "The rms value for DM " + str(dm) + " is: "+ rms    #take rms from the pre
 
 
 subprocess.call(bash_line2,shell=True)
+
+previous_detection = detection 
 
 #========================================================================
 
