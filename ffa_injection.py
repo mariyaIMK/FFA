@@ -117,8 +117,10 @@ print ""
 
 #compare the values in seconds
 if cands_period_temp == period_temp:
+    detection = True
     print "The pulsar was found as the first candidate at flux density: %.3f" % (sm)
 else:
+    detection = False
     print "The pulsar was NOT found as the first candidate"
     print "The current flux density is: %.3f" % (sm)
     print ""
